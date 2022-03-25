@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Axel's profile</title>
+    <meta name="robots" content="noindex">
+	<!-- Icons -->
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="https://unpkg.com/microtip/microtip.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<a href="javascript:void(0)" id="icon_link" class="icon_link" onclick="toggleNav()" accesskey="o">
+			<i class="fa-solid fa-bars fa-2xl" id="icon"></i>
+		</a>
+		<div id="navlinks">
+			<a href="#presentation">About me</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<a style="float:right;" href="/index.html" class="icon_link" accesskey="l" aria-label="Passer en français" data-microtip-position="left" role="tooltip">
+			<i class="fa-solid fa-language fa-2xl"></i>
+		</a>
+	</nav>
+
+	<!-- Mode switch desktop -->
+	<button class="desktop_switch desktop_only" onclick="toggleDarkMode()" accesskey="m">Switch theme</button>
+	<!-- Mode switch mobile -->
+	<button class="mobile_switch mobile_only" onclick="toggleDarkMode()"><i class="fas fa-adjust"></i></button>
+
+	<main>
+		<header>
+			<h2 class="text text-center py-4" data-aos="fade-down">Welcome!</h2>
+		</header>
+
+		<section id="presentation" class="mb-4" data-aos="fade-up">
+			<div class="paragraph">
+				<h1 class="text text-center py-5 name">Axel Zareb <span class="secondary" style="font-size: 90%;">| student</span></h1>
+				<p class="text">I'm 18 years old and I live in the Paris area. I'm in my first year in the <i>Sciences Formelles</i> portal (Computer Science, Mathematics, Data Science, Electronics) at <a href="https://sciences.sorbonne-universite.fr/en" target="_blank" class="link">Sorbonne Université</a> in the 5th district of Paris.</p>
+				<p class="text">I am curious, organized, a perfectionist and I like solving problems.</p>
+				<p class="text">In my free time, I listen to a lot of music, I love watching movies, series and videos on the Internet.</p>
+				<p class="text">I've been interested in new technologies since I was a kid, I enjoy video editing and beatmaking, and I practice musculation.</p>
+			</div>
+		</section>
+
+		<section id="projects" class="mb-4" data-aos="fade-up">
+			<h2 class="text text-center py-5">My projects</h2>
+			<!-- Container -->
+			<div class="container-fluid p-0">
+				<!-- Rangée 1 -->
+				<div class="row">
+					<!-- Colonne 1 -->
+					<div class="col-sm d-flex mb-3">
+						<div class="card p-4 h-100 mx-auto" data-aos="zoom-in">
+							<img src="https://raw.githubusercontent.com/axeelz/axeelz.github.io/main/img/cdfs_text.jpg" class="card-img-top rounded shadow" alt="Canvas Downloader">
+							<div class="card-body flex-column d-flex">
+								<h5 class="text card-title fw-bold">Canvas Downloader<span class="ms-2 badge rounded-pill bg-primary">Active</span></h5>
+								<p class="text card-text mb-2">A tool to download background video loops on Spotify. (1200+ users)</p>
+								<p class="secondary">Flask, HTML, CSS, JS, jQuery, PostgreSQL</p>
+								<a href="https://canvasdownloader.herokuapp.com/" target="_blank" class="btn mt-auto stretched-link">Go to website</a>
+							</div>
+						</div>
+					</div>
+					<!-- Fin de la colonne 1 -->
+					<!-- Colonne 2 -->
+					<div class="col-sm d-flex mb-3">
+						<div class="card p-4 h-100 mx-auto" data-aos="zoom-in">
+							<img src="https://raw.githubusercontent.com/axeelz/axeelz.github.io/main/img/atlanta.jpg" class="card-img-top rounded shadow" alt="Atlanta">
+							<div class="card-body flex-column d-flex">
+								<h5 class="text card-title fw-bold">Atlanta<span class="ms-2 badge rounded-pill bg-success">Finished</span></h5>
+								<p class="text card-text mb-2">A fictional site for the city of Atlanta (with travel reservations).</p>
+								<p class="secondary">HTML, CSS, PHP, JS, MariaDB</p>
+								<a href="http://stdo-lab.cloud-garage.net/atlanta/" target="_blank" class="btn mt-auto stretched-link">Go to website</a>
+							</div>
+						</div>
+					</div>
+					<!-- Fin de la colonne 2 -->
+				</div>
+				<!-- Fin de la rangée 1 -->
+				<!-- Rangée 2 -->
+				<div class="row">
+					<!-- Colonne 1 -->
+					<div class="col-sm d-flex mb-3" data-aos="zoom-in">
+						<div class="card p-4 h-100 mx-auto">
+							<img src="https://raw.githubusercontent.com/axeelz/axeelz.github.io/main/img/lyrics.jpg" class="card-img-top rounded shadow" alt="Realtime Lyrics">
+							<div class="card-body flex-column d-flex">
+								<h5 class="text card-title fw-bold">Realtime Lyrics<span class="ms-2 badge rounded-pill bg-success">Finished</span></h5>
+								<p class="text card-text mb-2">A web app that displays the Genius lyrics of the song you are playing on Spotify.</p>
+								<p class="secondary">Bottle (Python), HTML, CSS, JS, jQuery</p>
+								<a href="https://github.com/axeelz/realtimelyrics" target="_blank" class="btn mt-auto stretched-link">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Fin de la colonne 1 -->
+					<!-- Colonne 2 -->
+					<div class="col-sm d-flex mb-3" data-aos="zoom-in">
+						<div class="card p-4 h-100 mx-auto">
+							<img src="https://raw.githubusercontent.com/axeelz/axeelz.github.io/main/img/ultrasafe.jpg" class="card-img-top rounded shadow" alt="Ultrasafe">
+							<div class="card-body flex-column d-flex">
+								<h5 class="text card-title fw-bold">Ultrasafe<span class="ms-2 badge rounded-pill bg-success">Finished</span></h5>
+								<p class="text card-text mb-2">A project on Raspberry Pi with a site allowing to manage an alarm and consult its data.</p>
+								<p class="secondary">PHP, Python, HTML, CSS, JS, MariaDB, Figma</p>
+								<a href="https://github.com/axeelz/ultrasafearchive" target="_blank" class="btn mt-auto stretched-link">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Fin de la colonne 2 -->
+				</div>
+				<!-- Fin de la rangée 2 -->
+				<!-- Rangée 3 -->
+				<div class="row">
+					<!-- Colonne 1 -->
+					<div class="col-sm d-flex mb-3" data-aos="zoom-in">
+						<div class="card p-4 h-100 mx-auto">
+							<img src="https://raw.githubusercontent.com/axeelz/axeelz.github.io/main/img/discord.jpg" class="card-img-top rounded shadow" alt="Discord">
+							<div class="card-body flex-column d-flex">
+								<h5 class="text card-title fw-bold">Discord Bot<span class="ms-2 badge rounded-pill bg-success">Finished</span></h5>
+								<p class="text card-text mb-2">A bot with basic functionality for fun.</p>
+								<p class="secondary">Python</p>
+								<a href="https://github.com/axeelz/discordbotarchive" target="_blank" class="btn mt-auto stretched-link">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Fin de la colonne 1 -->
+					<!-- Colonne 2 -->
+					<div class="col-sm d-flex mb-3" data-aos="zoom-in">
+					</div>
+					<!-- Fin de la colonne 2 -->
+				</div>
+				<!-- Fin de la rangée 3 -->
+			</div>
+			<!-- Fin container -->
+		</section>
+
+		<section id="contact" class="" data-aos="fade-up">
+			<h2 class="text text-center pt-5">Let's keep in touch!</h2>
+			<hr class="my-5"/>
+			<div class="socials">
+				<button value="axelzareb@gmail.com" aria-label="Copy" data-microtip-position="top" role="tooltip" id="email" data-clipboard-target="#address">
+					<i class="fa-solid fa-copy"></i><span id="address">axelzareb@gmail.com</span>
+				</button>
+				<a href="https://www.linkedin.com/in/axelzareb/">
+					<i class="fa-brands fa-linkedin"></i><span>Linkedin</span>
+				</a>
+				<a href="https://github.com/axeelz">
+					<i class="fa-brands fa-github"></i><span>GitHub</span>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer mt-5 py-3">
+		<div class="container text-center">
+			<span class="text-muted" id="footer">Made by Axel ✨ · 2022</span>
+		</div>
+	</footer>
+
+	<script src="javascript/darkmode.js"></script>
+	<script src="javascript/dropdown.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+	<script>
+	var clipboard = new ClipboardJS('#email');
+
+	clipboard.on('success', function(e) {
+		document.getElementById("email").ariaLabel = "Copied 🎉";
+        setTimeout(function(){
+            document.getElementById("email").ariaLabel = "Copy";
+        }, 2000);
+		e.clearSelection();
+	});
+
+	clipboard.on('error', function(e) {
+		console.error('Action:', e.action);
+		console.error('Trigger:', e.trigger);
+		document.getElementById("email").ariaLabel = "Error 😢";
+        setTimeout(function(){
+            document.getElementById("email").ariaLabel = "Copy";
+        }, 2000);
+	});
+	</script>
+	<script src="https://kit.fontawesome.com/d35391d32c.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
