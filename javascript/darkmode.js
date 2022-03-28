@@ -1,12 +1,11 @@
 const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-const themeColor = document.querySelector('meta[name="theme-color"]')
+const themeColor = document.querySelector('meta[name="theme-color"]');
 
 const currentTheme = localStorage.getItem("theme");
 
-if (userPrefersDark && currentTheme == null) {
-    toggleDarkMode()
-    themeColor.setAttribute('content', "#000000")
+if (userPrefersDark && currentTheme === null) {
+    toggleDarkMode();
 }
 
 if (currentTheme == "dark") {
@@ -22,5 +21,5 @@ function toggleDarkMode() {
         color = "#000000";
     }
     localStorage.setItem("theme", theme);
-    themeColor.setAttribute('content', color)
+    themeColor.setAttribute('content', color);
 }
