@@ -16,7 +16,7 @@ if (currentTheme == "dark") {
 function toggleDarkMode() {
     document.body.classList.toggle("dark-theme");
     let theme = "light";
-    let color = "#FFFFFF";
+    let color = "#FAF8FF";
     if (document.body.classList.contains("dark-theme")) {
         theme = "dark";
         color = "#000000";
