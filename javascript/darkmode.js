@@ -28,3 +28,4 @@ function toggleDarkMode() {
 	localStorage.setItem("theme", theme);
 	themeColor.setAttribute('content', color);
 }
+
