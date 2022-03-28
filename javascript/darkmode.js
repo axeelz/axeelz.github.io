@@ -9,6 +9,10 @@ if (userPrefersDark && currentTheme === null) {
     themeColor.setAttribute('content', '#000000');
 }
 
+if (userPrefersDark && currentTheme == "dark") {
+    themeColor.setAttribute('content', '#000000');
+}
+
 if (currentTheme == "dark") {
     document.body.classList.add("dark-theme");
 }
