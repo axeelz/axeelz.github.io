@@ -133,7 +133,7 @@ img {
 	background-color: var(--colorButton);
 	color:  var(--colorButtonText);
 	border-radius: 10px;
-	font-weight: normal !important
+	font-weight: normal !important;
 }
 
 .mobile_switch {
