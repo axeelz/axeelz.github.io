@@ -6,6 +6,7 @@ const currentTheme = localStorage.getItem("theme");
 
 if (userPrefersDark && currentTheme == null) {
     toggleDarkMode()
+    themeColor.setAttribute('content', "#000000")
 }
 
 if (currentTheme == "dark") {
