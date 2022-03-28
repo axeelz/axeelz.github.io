@@ -183,24 +183,24 @@
 	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 	<script>
-	var clipboard = new ClipboardJS('#email');
+		var clipboard = new ClipboardJS('#email');
 
-	clipboard.on('success', function(e) {
-		document.getElementById("email").ariaLabel = "Copié 🎉";
-        setTimeout(function(){
-            document.getElementById("email").ariaLabel = "Copier";
-        }, 2000);
-		e.clearSelection();
-	});
+		clipboard.on('success', function(e) {
+			document.getElementById("email").ariaLabel = "Copié 🎉";
+			setTimeout(function(){
+				document.getElementById("email").ariaLabel = "Copier";
+			}, 2000);
+			e.clearSelection();
+		});
 
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-		document.getElementById("email").ariaLabel = "Erreur 😢";
-        setTimeout(function(){
-            document.getElementById("email").ariaLabel = "Copier";
-        }, 2000);
-	});
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+			document.getElementById("email").ariaLabel = "Erreur 😢";
+			setTimeout(function(){
+				document.getElementById("email").ariaLabel = "Copier";
+			}, 2000);
+		});
 	</script>
 	<script src="https://kit.fontawesome.com/d35391d32c.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

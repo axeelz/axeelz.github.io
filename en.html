@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Axel's profile</title>
-    <meta name="robots" content="noindex">
+	<meta name="robots" content="noindex">
 	<!-- Icons -->
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -183,24 +183,24 @@
 	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 	<script>
-	var clipboard = new ClipboardJS('#email');
+		var clipboard = new ClipboardJS('#email');
 
-	clipboard.on('success', function(e) {
-		document.getElementById("email").ariaLabel = "Copied 🎉";
-        setTimeout(function(){
-            document.getElementById("email").ariaLabel = "Copy";
-        }, 2000);
-		e.clearSelection();
-	});
+		clipboard.on('success', function(e) {
+			document.getElementById("email").ariaLabel = "Copied 🎉";
+			setTimeout(function(){
+				document.getElementById("email").ariaLabel = "Copy";
+			}, 2000);
+			e.clearSelection();
+		});
 
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-		document.getElementById("email").ariaLabel = "Error 😢";
-        setTimeout(function(){
-            document.getElementById("email").ariaLabel = "Copy";
-        }, 2000);
-	});
+		clipboard.on('error', function(e) {
+			console.error('Action:', e.action);
+			console.error('Trigger:', e.trigger);
+			document.getElementById("email").ariaLabel = "Error 😢";
+			setTimeout(function(){
+				document.getElementById("email").ariaLabel = "Copy";
+			}, 2000);
+		});
 	</script>
 	<script src="https://kit.fontawesome.com/d35391d32c.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
